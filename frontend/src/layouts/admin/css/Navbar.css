@@ -1,0 +1,133 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(24, 22, 22);
+    /* background: wheat; */
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  
+  .navbar-tittle {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: white;
+    margin: 25px;
+  }
+  
+  .navbar-search {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .navbar-search input {
+    width: 180px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .navbar-button-search {
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #0d9fe3;
+  }
+  .icon-nav-search {
+    color: white;
+  }
+  .navbar-option {
+    margin: 0 25px;
+    cursor: pointer;
+  }
+  .navbar-option::after {
+    content: "";
+    border-top: 0.3em solid white;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+  }
+  .navbar-dropdown {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  ul.dropdown-menu-visible {
+    display: none;
+  }
+  ul.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    list-style: none;
+    margin-top: 10px;
+    background: white;
+    min-width: 10rem;
+    padding: 0.6rem;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  .dropdown-menu a {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    color: #212529;
+    text-align: left;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+  }
+  
+  .dropdown-menu button{
+    width: 100%;
+    padding: 10px 0;
+    border:none;
+    background: rgba(45, 141, 165, 0.9);
+    cursor:pointer;
+    color: white;
+  }
+
+  .dropdown-menu li:hover {
+    background: #ecedee;
+  }
+  
+  @media only screen and (max-width: 280px) {
+    .navbar-container {
+      justify-content: flex-end;
+    }
+    .navbar-tittle {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 414px) {
+    .navbar-search {
+      margin: 0;
+    }
+    .navbar-search input {
+      padding: 10px;
+      width: 155px;
+    }
+    .navbar-button-search {
+      padding: 10px;
+    }
+    .navbar-option {
+      margin: 0 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .navbar-search input {
+      width: 125px;
+    }
+  }
+  
