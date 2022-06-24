@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-const Navbar = () => {
+const Navbar = ({admin}) => {
 
   const Navigate = useNavigate();
 
@@ -33,7 +33,8 @@ const Navbar = () => {
             <div className='navbar-option' onClick={dropdownClick}>
               <FaIcons.FaUser className='navbar-dropdown'/>
               <ul className={dropdown ? 'dropdown-menu active' : 'dropdown-menu-visible'}>
-                <li><Link to='#'>Settings</Link></li>
+                
+                <li><Link to={`EditCategory/${admin.id}`}>Settings</Link></li>
                 <li><Link to='#'>Activity Log</Link></li>
                 <li><hr /></li>
                 <li><button onClick={Logout}>Logout</button></li>
