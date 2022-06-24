@@ -12,12 +12,12 @@ export const Sidebaritem = [
     },
     {
         tittle: 'Add Category',
-        linkitem : '#',
+        linkitem : '/mdproadmin/AddCategory',
         icon: <AiIcons.AiFillFolderAdd />,
     },
     {
         tittle: 'View Category',
-        linkitem : '#',
+        linkitem : '/mdproadmin/ViewCategory',
         icon: <HiIcons.HiViewBoards />,
     },
     {
@@ -42,7 +42,7 @@ export const Sidebaritem = [
     },
     {
         tittle: 'Profile',
-        linkitem : '/mdproadmin/profile',
+        linkitem : '/mdproadmin/Profile',
         icon: <HiIcons.HiViewBoards />,
     },
     

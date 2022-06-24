@@ -1,5 +1,6 @@
 GET http://localhost:5000/mdproAdmin
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNdWhhbW1hZCBSaXpraSBBa2JhciIsImVtYWlsIjoibWRwcm9hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NTUyMzU2MDQsImV4cCI6MTY1NTIzNTYyNH0.tnkDlIAoGAyKU_RXdNvXbn5Av8Jzdog-Of3LUUBjs6U
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNdWhhbW1hZCBSaXpraSBBa2JhciIsImVtYWlsIjoibWRwcm9hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2NTYwMDk2OTIsImV4cCI6MTY1NjAwOTcxMn0.qUQmRyVaTjZFGcrP7oKIFOfFNwW5F88n5PeSbvzNId4
+
 
 # ###
 # POST http://localhost:5000/mdproAdmin
@@ -15,6 +16,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hb
 #     "gender": "laki-laki"
 # }
 
+
 ###
 POST http://localhost:5000/mdprologin
 Content-Type: application/json
@@ -23,6 +25,8 @@ Content-Type: application/json
     "email" : "mdproadmin@gmail.com",
     "password" : "mdproadmin"
 }
+
+
 
 ###
 GET http://localhost:5000/mdprotoken
